@@ -10,12 +10,16 @@ import json
 
 
 
-cards = Card.where(language="Italian").where(set='ktk').where(subtypes='warrior,human').all()
-for c in cards:
-	print(c.name,' ',c.cmc ,c.colors)	
-	
+#cards = Card.where(language="Italian").where(set='ktk').where(subtypes='warrior,human').all()
+#for c in cards:
+	#print(c.name,' ',c.cmc ,c.colors)	
+print ('Ricerca in corso...')	
 
-cardss=Card.where(language="Italian").where(name='fulmine').all()
-
+cardss=Card.all()
+textFile=open('magicTest.txt',wb)
+print('Scrittura su file')
 for c in cardss:
-	print(c.name,' ',c.cmc ,c.colors)	
+	#print(c.name)
+	textFile.writelines(c.name)
+textFile.close()
+print ('Fine')
