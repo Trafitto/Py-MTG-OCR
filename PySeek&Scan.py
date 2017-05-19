@@ -14,7 +14,7 @@ pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files (x86)/Tesseract-OCR/te
 
 #print(pytesseract.image_to_string(Image.open('C:\\Users\\Marco Borchi\\Desktop\\242.jpg'),lang='ita'))
 #print(pytesseract.image_to_string(Image.open('test-european.jpg'), lang='ita'))
-im = Image.open("Pianura2.jpg") #NOTE: WITH 500X500 IMG NO PROBLEM TO READ THE TEXT
+im = Image.open("Img2Test\\Pianura2.jpg") #NOTE: WITH 500X500 IMG NO PROBLEM TO READ THE TEXT
 text=''
 enchanceIndex=1 #per fare una prova ho visto che da 12 in poi legge bene
 w,h=im.size
